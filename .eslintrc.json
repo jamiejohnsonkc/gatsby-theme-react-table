@@ -1,0 +1,73 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "airbnb/hooks",
+        "plugin:import/typescript",
+        "prettier/react",
+        "prettier",
+        "prettier/@typescript-eslint"
+    ],
+
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 11,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["react", "prettier", "import"],
+    "rules": {
+        "react/jsx-props-no-spreading": [
+            0,
+            {
+                "html": "enforce",
+                "custom": "ignore",
+                "explicitSpread": "enforce",
+                "exceptions": []
+            }
+        ],
+        "import/no-unresolved": [
+            2,
+            {
+                "commonjs": true,
+                "amd": true
+            }
+        ],
+        "no-use-before-define": [
+            0,
+            { "functions": false, "classes": false, "variables": false }
+        ],
+        "import/named": 2,
+        "import/namespace": 2,
+        "import/default": 2,
+        "import/export": 2,
+        "react/react-in-jsx-scope": "off", // Conditionally apply for reactRuntime?
+        "import/no-webpack-loader-syntax": [0],
+        "react/jsx-pascal-case": "off",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx"]
+            }
+        ],
+        "react/prop-types": 0,
+        "no-unused-vars": [
+            0,
+            {
+                "vars": "local",
+                "args": "none"
+            }
+        ]
+    },
+    "settings": {
+        "import/extensions": [".js", ".jsx"]
+    }
+}

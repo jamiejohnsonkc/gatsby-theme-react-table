@@ -1,0 +1,19 @@
+{
+    "name": "gatsby-theme-react-table",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "@jamiejohnsonkc",
+    "license": "MIT",
+    "private": false,
+    "description": "fork of https://github.com/tannerlinsley/react-table ",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jamiejohnsonkc/gatsby-theme-react-table.git"
+    },
+    "devDependencies": {
+        "react-table": "^7.5.0"
+    },
+    "dependencies": {
+        "namor": "^2.0.2"
+    }
+}
